@@ -140,6 +140,9 @@ public class AddressBookMain {
 		System.out.println("Enter the number of person you want to add: ");
 		int person = sc4.nextInt();
 		for (int i = 0; i < person; i++) {
+			System.out.println("Enter the Dictionary name: ");
+			String dictionary = sc4.nextLine();
+			System.out.println("The name is:" + dictionary);
 			addRecord();
 		}
 	}
