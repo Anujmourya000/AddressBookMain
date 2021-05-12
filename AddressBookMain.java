@@ -131,6 +131,20 @@ public class AddressBookMain {
 	}
 
 	/**
+	 * @description method for taking entry of multiple person
+	 * @param
+	 *
+	 */
+	public static void multiplePerson() {
+		Scanner sc4 = new Scanner(System.in);
+		System.out.println("Enter the number of person you want to add: ");
+		int person = sc4.nextInt();
+		for (int i = 0; i < person; i++) {
+			addRecord();
+		}
+	}
+
+	/**
 	 * @description Main method
 	 * @param
 	 *
@@ -138,10 +152,6 @@ public class AddressBookMain {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Address Book Program");
 		AddressBook();
-		addRecord();
-		AddressBook();
-		editRecord();
-		AddressBook();
-		deleteRecord();
+		multiplePerson();
 	}
 }
